@@ -1,0 +1,781 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+ 
+}
+
+#corpo{
+    background-color: #e8e8e8;
+    
+}
+
+
+
+
+:root{
+    --main-colo: #ff0000;
+}
+
+/*links*/
+
+
+  .menu, ul{
+      list-style: none;
+      
+  }
+ 
+ li a{
+     text-decoration: none;
+     padding: 5px;
+     color: #000;
+ }
+ 
+ /*header*/
+ 
+ header{
+     margin-bottom: 50px;
+ }
+
+ 
+ 
+ 
+#logo-apple{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+ 
+ .cabecalho{
+     display: flex;
+     justify-content: flex-end;
+     gap: 25px;
+     margin-top: -22px;
+     margin-right: 20px;
+     
+ }
+ 
+ #menu-list{
+     display: none;
+     background-color: #d3d3d3;
+     width: 100%;
+     height: 100%;
+     text-align: center;
+     line-height: 2;
+     font-weight: 700;
+     animation: fadeInLeft 4s ease-in-out;
+     
+     
+     }
+     
+/* usando keyframes para fazer a animacao fadeInLeft para o elemento saia do lado esquerdo */
+    
+      @keyframes fadeInLeft{
+         
+         0%{
+             opacity: 0;
+             transform: translateX(-600px);
+         }
+         
+         50%{
+             opacity: 0.7;
+         }
+         
+         100%{
+             
+             opacity: 1;
+             transform: translateX(0);
+         }
+     }
+ 
+ 
+
+ 
+ 
+ /*fazer a media da logo e do menu*/
+ 
+ @media screen and (min-width: 769px){
+     
+     
+     .cabecalho{
+         font-size: 2rem;
+         margin-top: -1em;
+     }
+ }
+ 
+ h1{
+     margin-top: 80px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     color: #808080;
+     margin-bottom: 40px;
+     margin-left: 20px;
+     
+ }
+ 
+ h2{
+     color: #808080;
+ }
+ 
+ h3{
+     color: #808080;
+ }
+ 
+ #texto-01{
+     font-size: 16px;
+     margin-bottom: 10%;
+     
+ }
+ 
+
+ 
+ 
+ .color{
+     color: var(--main-colo);
+ }
+  /*  uma imagem que fala que se vc precisar de ajudar */
+  
+  
+ .precisa-ajuda{
+     padding: 20px;
+     width: 73px;
+     height: 73px;
+     border-radius: 50%;
+     margin-top: -1px;
+     
+     
+ }
+ 
+ div.group-01{
+     display: flex;
+ }
+ 
+ p.paragrapho{
+     font-size: 14px;
+     margin-top: 26px;
+     font-weight: 500;
+     margin-top: 10px; 
+ }
+ 
+ p.paragrapho-01{
+     margin-left: 73px;
+     margin-top: -36px;
+     font-size: 12px;
+     
+ }
+ 
+ a.fale-conosco{
+     text-decoration: none;
+     list-style-type: none;
+     color: rgb(0,0,255);
+     
+ }
+ 
+ 
+ @media  screen and (min-width: 769px) {
+     
+     .precisa-ajuda{
+         width: 6.6rem;
+         height: 6.6rem;
+     }
+     
+     p.paragrapho{
+         font-size: 1.8rem;
+     }
+     
+     p.paragrapho-01{
+         font-size: 1.8rem;
+         margin-left: 6.7rem;
+     }
+     
+     #text-01{
+         font-size: 2rem;
+     }
+     
+  
+ }
+ /*------------*/
+ 
+ 
+ #marker{
+     color: var(--main-colo);
+     margin-left: 15px;
+     font-size: 18px;
+     font-weight: 600;
+     margin-top: -20px;
+     padding: 20px;
+     margin-bottom: -10px;
+ }
+ 
+ 
+ div.group-02{
+     display: flex;
+     margin-top: 40px;
+    
+ }
+ 
+ p.store-01{
+     margin-top: -10px;
+     
+     
+ }
+ 
+ 
+a.text-01{
+    list-style: none;
+    font-size: 12px;
+    color: rgb(0,0,255);
+    margin-top: -80px;
+    margin: 73px;
+    
+}
+
+      /* gallery*/
+
+#h2{
+    margin-top: 100px;
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.imagem-01{
+    border: 2px solid red;
+    border: none;
+    margin-left: 8%;
+    
+    
+    
+}
+
+
+#phot-01{
+    width: 260px;
+    height: 400px;
+    position: relative;
+    margin-left: 10%;
+    border-radius: 30px;
+    box-shadow: 8px 8px 8px #cecece;
+    margin-bottom: 10%;
+        
+    }
+
+.title-01{
+    position: absolute;
+    margin-top: -410px;
+    margin-left: 13%;
+    font-size: 10px;
+    font-weight: 500;
+    color: #808080;
+    
+    
+}
+
+.title-02{
+    position: absolute;
+    margin-top: -380px;
+    font-weight: 600;
+    margin-left: 13%;
+    font-size: 12px;
+}
+
+.title-03{
+    position: absolute;
+    margin-top: -360px;
+    font-weight: 400;
+    margin-left: 13%;
+    font-size: 13px;
+}
+
+
+    
+.gallery-container{
+   column-count: 1;
+  
+   
+}
+
+
+@media screen and (min-width: 769px) {
+    
+    .gallery-container{
+        column-count: 3;
+    }
+    
+    .imagem-01{
+        margin-left: 0.3rem;
+    }
+    
+    .title-01, .title-02, .title-03{
+        margin-left: 2.8rem;
+    }
+    
+    #h2{
+        font-size: 1.8rem;
+    }
+    
+    #texto-01{
+        text-align: center;
+        font-size: 2.8rem;
+    }
+    
+    
+}
+
+    .h-03{
+        font-size: 16px;
+        text-align: center;
+        margin-top: 10%;
+    }
+    
+    
+#photo-10{
+    width: 300px;
+    height: 430px;
+    position: relative;
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border-radius: 30px;
+    box-shadow: 10px 8px 8px #cecece;
+}
+
+    .p-04{
+        font-size: 14px;
+        position: absolute;
+        margin-top: -460px;
+        margin-left: 15%;
+        font-weight: 600;
+       
+    }
+    
+    .photo-11{
+        width: 100%;
+        border-radius: 20px;
+    }
+    
+    
+    .gallery-02{
+        border: 2px solid red;
+        width: 340px;
+        margin-top: 10%;
+        margin-left: 5%;
+        background-color: #fff;
+        border-radius: 20px;
+        border: none;
+        box-shadow: 10px 8px 8px #cecece; 
+        margin-bottom: 5%;
+    }
+    
+    .p-05{
+        font-size: 12px;
+        font-weight: 500;
+        color: #e1af33;
+        margin-left: 1%;
+        opacity: 0.7;
+    
+    }
+    
+    
+    .p-06{
+        font-size: 13px;
+        font-weight: 600;
+        margin-left: 1%;
+    }
+    
+    
+    .p-07{
+        font-size: 14px;
+        font-weight: 400;
+        margin-left: 1%;
+    }
+
+
+h4, .subtitulo-01{
+    margin-top: 26%;
+    font-size: 18px;
+    color: #808080;
+    text-align: center;
+}
+
+.box-01{
+    border: 2px solid red;
+    width: 270px;
+    height: 170px;
+    text-align: center;
+    margin: 20px;
+    background: #fff;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 10px 8px 8px #cecece;
+    margin-top: 10%;
+    margin-bottom: 4%;
+    
+}
+
+@media screen and (min-width: 769px) {
+    
+    .h-03{
+        font-size: 2rem;
+        
+    }
+    
+    .gallery-container-01{
+        column-count: 2;
+        margin-left: 2rem;
+     }
+     
+     .subtitulo-01{
+         font-size: 1.9rem;
+     }
+     
+}
+
+    /*box-container*/
+
+
+#car{
+    color: var(--main-colo);
+    margin-top: 20%;
+    margin-left: -75%;
+}
+
+  .frete{
+      font-weight: 600;
+  }
+  
+  #open{
+      color: var(--main-colo);
+      margin-top: 20%;
+      margin-left: -75%;
+  }
+  
+  
+  .devolucao{
+      font-weight: 600;
+  }
+  
+  #cart{
+      color: var(--main-colo);
+       margin-top: 20%;
+       margin-left: -80%;
+  }
+  
+  p.pag{
+     font-size: 14px;
+     font-weight: 600;
+     margin-left: -3%;
+    }
+   
+  #store{
+      color: var(--main-colo);
+       margin-top: 20%;
+       margin-left: -80%;
+      
+  }
+  
+  .store{
+      font-size: 11px;
+      font-weight: 600;
+      margin-left: -3%;
+  }
+  
+  
+  .box-02{
+      border: 2px solid red;
+      width: 336px;
+      margin-left: 4%;
+      position: relative;
+      border: none;
+      box-shadow: 10px 8px 8px #cecece;
+  }
+  
+  #modelo{
+      width: 337px;
+      border-radius: 20px;
+  }
+  
+  .mac{
+      position: absolute;
+      margin-top: -440px;
+      margin-left: 5%;
+      font-size: 14px;
+      font-weight: 600;
+  }
+  
+  .mac-01{
+      position: absolute;
+      margin-top: -390px;
+      margin-left: 5%;
+      font-size: 14px;
+      font-weight: 400;
+  }
+   
+   
+   .box-03{
+       border: 2px solid red;
+       width: 337px;
+       margin-left: 4%;
+       position: relative;
+       margin: 10% 0px 10% 6%;
+       border: none;
+       box-shadow: 10px 8px 8px #cecece;
+   }
+   
+   
+   .expert{
+        position: absolute;
+        margin-top: -470px;
+        margin-left: 10%;
+        font-size: 14px;
+        font-weight: 400;
+        border-radius: 20px;
+   }
+  
+  
+   .expert-01{
+       position: absolute;
+       margin-top: -430px;
+       margin-left: 10%;
+       font-size: 14px;
+       font-weight: 600;
+       
+   }
+  
+  
+  #modelo-01{
+      width: 337px;
+      border-radius: 20px;
+      }
+      
+      
+      .box-04{
+          border: 2px solid red;
+          width: 337px;
+          margin-left: 4%;
+          position: relative;
+          margin: 10% 0px 10% 6%;
+          border: none;
+          box-shadow: 10px 8px 8px #cecece;
+          
+      }
+      
+ #modelo-02{
+           width: 337px;
+           border-radius: 20px;
+       }
+       
+       
+ .today{
+        position: absolute;
+        margin-top: -470px;
+        margin-left: 10%;
+        font-size: 12px;
+        font-weight: 300;
+     
+ }
+ 
+.today-01{
+        position: absolute;
+        margin-top: -430px;
+        margin-left: 10%;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    
+.today-02 {
+        position: absolute;
+        margin-top: -370px;
+        margin-left: 10%;
+        font-size: 12px;
+        font-weight: 6400;
+    
+    }
+    
+    /* media dos boxs */
+
+ @media screen and (min-width: 769px){
+     
+     .today, .today-01, .today-02{
+         margin-left: 3%;
+     }
+     
+     .today{
+         margin-top: -60rem;
+         font-size: 2rem;
+     }
+     
+     .today-01{
+         margin-top: -56rem;
+         font-size: 2.2rem
+     }
+     
+     .today-02{
+         margin-top: -45rem;
+         font-size: 2rem;
+         
+     }
+     
+     .expert{
+         margin-top: -60rem;
+         font-size: 1.8rem;
+     }
+     
+     .expert-01{
+         margin-top: -55rem;
+         font-size: 1.9rem;
+     }
+     
+     .mac{
+         margin-left: 3%;
+         margin-top: -60rem;
+         font-size: 2rem;
+     }
+     
+     .mac-01{
+         margin-left: 3%;
+         margin-top: -55rem;
+         font-size: 1.6rem;
+         line-height: 1.5;
+         font-weight: 400;
+     }
+     
+     #h-05{
+         font-size: 1.9rem;
+     }
+     
+     
+ }
+ 
+ 
+ /* gallery 3 */
+ 
+
+ #h-05{
+     margin-top: 10%;
+     margin-bottom: 10%;
+     color: #808080;
+ }
+ 
+ .polaroid{
+     
+     background-color: #fff;
+     box-shadow: 8px 8px 8px #cecece;
+     margin-bottom: 10%;
+     border-radius: 20px;
+     animation: zoomIn 5s ease-in-out;
+     animation-delay: 3s;
+ }
+ 
+ 
+    div.container-polaroid{
+        text-align: center;
+        padding: 10px 20px
+    }
+    
+    .topo{
+        margin-top: -460px;
+        font-weight: 550;
+    }
+    
+    .topo-01, .topo-02, .topo-03, .topo-04, .topo-05, .topo-06{
+        font-weight: 600;
+        
+    }
+    
+    
+    
+    
+    
+    @media screen and (min-width: 768.99px){
+        
+        .topo{
+            margin-top: -60rem;
+            font-size: 1.2rem;
+        }
+        #h-06{
+            font-size: 1.7rem;
+        }
+        
+    }
+    
+    /*imagens*/
+ 
+ #h-06{
+     color: #808080;
+     margin-bottom: 10%;
+     margin-top: 10%;
+ }
+ 
+ /* final do site */
+ 
+ .btn-02{
+     width: 200px;
+     height: 35px;
+     border-radius: 30px;
+     background-color: #808080;
+     border-color: #fff;
+     border: none;
+ }
+ 
+ .btn-02:hover{
+     background-color: #000;
+     color: #fff;
+ }
+ 
+ .btn-01:hover{
+     background-color: #000;
+     color: #fff;
+ }
+ 
+ #text-01{
+     font-size: 10px;
+ }
+ 
+ .btn-01{
+     width: 200px;
+     height: 35px;
+     border-radius: 30px;
+     background-color: #808080;
+     border-color: #fff;
+     margin-bottom: 5%;
+     border: none;
+ }
+ 
+ .end-01{
+     margin-top: 5%;
+     font-size: 14px;
+     color: #808080;
+ }
+ 
+ @media screen and (min-width: 769px){
+     
+     
+     .btn-01, .btn-02{
+         width: 20rem;
+         height: 3rem;
+         margin-top: 10%;
+     }
+     
+     #text-01{
+         font-size: 1.3rem;
+     }
+     
+     .end-01{
+         font-size: 1rem;
+     }
+     
+     #text-end{
+         font-size: 1.7rem;
+     }
+     
+     
+     
+     
+ }
+    
+
+      
+      
+
+  
